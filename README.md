@@ -4,9 +4,9 @@
 
 # Hoisted on
 
-**Backend:** Backend is hoisted on Render
-**Frontend:** Frontend is hoisted on Vercel
-**LINK**: https://study-notion-project-frontend-xi.vercel.app/
+- **Backend:** Backend is hoisted on Render.
+- **Frontend:** Frontend is hoisted on Vercel.
+- **LINK**: https://study-notion-project-frontend-xi.vercel.app/.
 
 
 ## Features
