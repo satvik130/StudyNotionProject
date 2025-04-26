@@ -57,9 +57,7 @@ The platform uses a RESTful API design. Key endpoints include:
 - Machine learning-powered recommendations
 - VR/AR integration for immersive learning experiences
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
 
