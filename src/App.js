@@ -29,6 +29,8 @@ import CourseDetails from "./pages/CourseDetails";
 import ViewCourse from "./pages/ViewCourse";
 import VideoDetails from "./Components/Core/ViewCourse/VideoDetails";
 import Instructor from "./Components/Core/InstructorDashboard/Instructor";
+import ChatBot from "./Components/Common/ChatBot";
+import AIRoadmap from "./pages/AIRoadmap";
 
 function App() {
   const dispatch = useDispatch();
@@ -102,7 +104,11 @@ function App() {
           element={
               <ContactUs/>
           }
-        />  
+        /> 
+        <Route
+  path="/ai-roadmap"
+  element={<AIRoadmap />}
+/> 
 
         <Route
           element={
@@ -166,6 +172,7 @@ function App() {
         </Route>
 
       </Routes>
+      <ChatBot />
       <Toaster/>
 
     </div>

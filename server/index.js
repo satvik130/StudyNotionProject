@@ -6,7 +6,10 @@ const profileRoutes = require("./routes/Profile");
 const courseRoutes = require("./routes/Course");
 const paymentRoutes = require("./routes/Payments");
 const contactUsRoute = require("./routes/Contact");
+const chatBotRoutes = require("./routes/ChatBot");
+const aiRoadmapRoutes = require("./routes/AIRoadmap");
 const database = require("./config/database");
+const aiRecommendationRoutes = require("./routes/AIRecommendations");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const { cloudinaryConnect } = require("./config/cloudinary");
@@ -53,6 +56,9 @@ app.use("/api/v1/profile", profileRoutes);
 app.use("/api/v1/course", courseRoutes);
 app.use("/api/v1/payment", paymentRoutes);
 app.use("/api/v1/reach", contactUsRoute);
+app.use("/api/v1/chatbot", chatBotRoutes);
+app.use("/api/v1/ai", aiRoadmapRoutes);
+app.use("/api/v1/ai", aiRecommendationRoutes);
 
 // Testing the server
 app.get("/", (req, res) => {
