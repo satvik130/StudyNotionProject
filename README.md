@@ -2,6 +2,13 @@
 
 **StudyNotion** is an ed-tech platform that enables users to create, consume, and rate educational content. Built with the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), it aims to provide an immersive and interactive learning experience.
 
+# Hoisted on
+
+- **Backend:** Backend is hoisted on Render.
+- **Frontend:** Frontend is hoisted on Vercel.
+- **LINK**: https://study-notion-project-frontend-xi.vercel.app/.
+
+
 ## Features
 
 ### For Students
@@ -50,9 +57,7 @@ The platform uses a RESTful API design. Key endpoints include:
 - Machine learning-powered recommendations
 - VR/AR integration for immersive learning experiences
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
 
