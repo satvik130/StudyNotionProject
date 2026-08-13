@@ -6,7 +6,7 @@
 
 - **Backend:** Backend is hoisted on Render.
 - **Frontend:** Frontend is hoisted on Vercel.
-- **LINK**: https://study-notion-project-frontend-xi.vercel.app/.
+- **LINK**: https://studynotionprojects.onrender.com/.
 
 
 ## Features
