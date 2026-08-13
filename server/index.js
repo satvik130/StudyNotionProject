@@ -1,6 +1,11 @@
+// Loading environment variables first
+const dotenv = require("dotenv");
+dotenv.config();
+
 // Importing necessary modules and packages
 const express = require("express");
 const app = express();
+
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
 const courseRoutes = require("./routes/Course");
@@ -8,38 +13,30 @@ const paymentRoutes = require("./routes/Payments");
 const contactUsRoute = require("./routes/Contact");
 const chatBotRoutes = require("./routes/ChatBot");
 const aiRoadmapRoutes = require("./routes/AIRoadmap");
-const database = require("./config/database");
 const aiRecommendationRoutes = require("./routes/AIRecommendations");
+
+const database = require("./config/database");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
-const dotenv = require("dotenv");
 
 // Setting up port number
 const PORT = process.env.PORT || 4000;
 
-// Loading environment variables from .env file
-dotenv.config();
-
 // Connecting to database
 database.connect();
- 
+
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
+
 app.use(
 	cors({
 		origin: "*",
-		credentials: true,
 	})
 );
-app.use((req, res, next) => {
-	res.setHeader("Access-Control-Allow-Origin", "*");
-	res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
-	res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-	next();
-})
+
 app.use(
 	fileUpload({
 		useTempFiles: true,
@@ -47,7 +44,7 @@ app.use(
 	})
 );
 
-// Connecting to cloudinary
+// Connecting to Cloudinary
 cloudinaryConnect();
 
 // Setting up routes
@@ -72,5 +69,3 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
 	console.log(`App is listening at ${PORT}`);
 });
-
-// End of code.
